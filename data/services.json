@@ -1,0 +1,78 @@
+{
+  "capabilities": [
+    {
+      "id": "web-ui-ux",
+      "title": "Web & UI/UX Design",
+      "number": "01",
+      "description": "Creating intuitive, accessible, and highly aesthetic interfaces that balance user needs with business goals, ensuring every interaction feels purposeful.",
+      "approach": "User-centric research paired with asymmetric minimalist design principles.",
+      "deliverables": [
+        "Wireframes & Prototypes",
+        "High-Fidelity Mockups",
+        "Design Systems"
+      ],
+      "icon": "web"
+    },
+    {
+      "id": "brand-design",
+      "title": "Brand Design",
+      "number": "02",
+      "description": "Crafting sophisticated visual identities that communicate your brand's unique value proposition.",
+      "approach": "Editorial storytelling combined with high-contrast color systems.",
+      "deliverables": [
+        "Logo & Identity",
+        "Typography & Color",
+        "Brand Guidelines"
+      ],
+      "icon": "brush"
+    },
+    {
+      "id": "web-dev",
+      "title": "Web Development",
+      "number": "03",
+      "description": "Robust, scalable front-end and back-end development utilizing modern frameworks to bring sophisticated designs to life perfectly.",
+      "approach": "Modern React structures, semantic HTML layouts, and speed optimization.",
+      "deliverables": [
+        "React / Next.js",
+        "Tailwind CSS",
+        "Headless CMS"
+      ],
+      "icon": "code"
+    },
+    {
+      "id": "ecommerce-redesign",
+      "title": "E-commerce & Redesign",
+      "number": "04",
+      "description": "Revitalizing existing platforms or building conversion-optimized online stores that deliver premium shopping experiences.",
+      "approach": "Audit-first improvement strategies and optimized shopping layouts.",
+      "deliverables": [
+        "Shopify / WooCommerce / Custom builds",
+        "Performance Audits & Speed Tuning",
+        "UX Overhaul & Modernization"
+      ],
+      "icon": "storefront"
+    }
+  ],
+  "standardChecklist": [
+    {
+      "feature": "Strategy & Research",
+      "aaromi": "Included (Audit, interviews, architecture)",
+      "templates": "None (Jump straight to building)"
+    },
+    {
+      "feature": "Custom Layouts",
+      "aaromi": "Editorial, tailor-made asymmetric designs",
+      "templates": "Fixed, generic grid templates"
+    },
+    {
+      "feature": "Responsive Code",
+      "aaromi": "Tailwind compiled, clean and lightning fast",
+      "templates": "Bloated page-builder output, slow load times"
+    },
+    {
+      "feature": "CMS Integration",
+      "aaromi": "Tailored administrative panel for local management",
+      "templates": "Hardcoded or complex third-party tools"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+[
+  {
+    "number": "01",
+    "title": "Discover",
+    "objectives": "Understand the business landscape, audience needs, and technical constraints. Uncover the hidden opportunities.",
+    "activities": [
+      "Stakeholder Interviews",
+      "Market Research",
+      "Audience Personas"
+    ],
+    "deliverables": [
+      "Discovery Report"
+    ]
+  },
+  {
+    "number": "02",
+    "title": "Strategy",
+    "objectives": "Define the conceptual and structural foundation. Align business goals with user experience pathways.",
+    "activities": [
+      "Information Architecture",
+      "Content Strategy",
+      "Wireframing"
+    ],
+    "deliverables": [
+      "Sitemap",
+      "Lo-Fi Wires"
+    ]
+  },
+  {
+    "number": "03",
+    "title": "Design",
+    "objectives": "Craft the visual language and interaction paradigms. Transform structural plans into compelling, sophisticated aesthetics.",
+    "activities": [
+      "Visual Explorations",
+      "UI Systems Design",
+      "Prototyping"
+    ],
+    "deliverables": [
+      "Design System",
+      "Hi-Fi Mocks"
+    ]
+  },
+  {
+    "number": "04",
+    "title": "Build",
+    "objectives": "Transform designs into semantic, performant, and secure code. Integrate dynamic CMS workflows.",
+    "activities": [
+      "Front-end Coding",
+      "Backend Development",
+      "CMS Integration"
+    ],
+    "deliverables": [
+      "Clean Codebase",
+      "Staging Site"
+    ]
+  },
+  {
+    "number": "05",
+    "title": "Launch",
+    "objectives": "Deploy the project to production securely and verify all integrations and performance guidelines.",
+    "activities": [
+      "QA Testing",
+      "SEO Checklist",
+      "DNS/Hosting Setup"
+    ],
+    "deliverables": [
+      "Live Production Site"
+    ]
+  },
+  {
+    "number": "06",
+    "title": "Optimize",
+    "objectives": "Monitor user interactions, audit speed performance metrics, and iterate based on real-world data.",
+    "activities": [
+      "Analytics Setup",
+      "Page-speed Checks",
+      "Conversion Auditing"
+    ],
+    "deliverables": [
+      "Performance Audits"
+    ]
+  }
+]

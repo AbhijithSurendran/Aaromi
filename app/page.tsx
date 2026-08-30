@@ -2,6 +2,7 @@ import fs from "fs/promises";
 import path from "path";
 import Link from "next/link";
 import Image from "next/image";
+import HeroCarousel from "@/components/HeroCarousel";
 
 interface Project {
   id: string;
@@ -59,36 +60,8 @@ export default async function HomePage() {
           </div>
         </div>
 
-        {/* Hero mockup graphics bento grid */}
-        <div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-6 relative z-0">
-          <div className="rounded-xl overflow-hidden shadow-2xl h-80 md:h-[400px] md:-mt-12 opacity-90 transform md:rotate-[-2deg] hover:rotate-0 transition-transform duration-500 relative border border-outline-variant/30">
-            <Image 
-              fill
-              sizes="(max-w-768px) 100vw, 33vw"
-              className="object-cover" 
-              alt="E-commerce Dashboard Minimalist Design"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1auNKkdUkI-9SXwmY1cjlZvKkSGJ288WnPrYZO8WRHaDP5TYmN0WUW3phINchI1g2zBzpRL5QPPXXfLi_llaiHoTHJdYDo7NGitpu3z_0ivG2vsK4mJWaxzkG0dKSl5m4V-6ws0MJAKFI0eCTzNbkFPIFB0hcZAa32Y6g4hYRa2q2wPxt7I281Uo3sLkCW6ACT7GnXSN8U5OlZylgomUOtzegJgX1l6M794o0xbS7z_o4fj6WcXI"
-            />
-          </div>
-          <div className="rounded-xl overflow-hidden shadow-2xl h-80 md:h-[450px] z-10 transform hover:scale-[1.02] transition-transform duration-500 border border-outline-variant/30 relative">
-            <Image 
-              fill
-              sizes="(max-w-768px) 100vw, 33vw"
-              className="object-cover" 
-              alt="Premium Tablet Web Layout Mockup"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhK9r7_kQ03Ld1j7tJTgw91ql1Fhepd31jpfzsCDXwOiL7fqei0KrEcGFut-Ck0PkQ_8ZzF_S8sBOzMXUU2ldA5COU3bpw_qicBoEkv-eqZpWuwvymUN1e-cwZg6JBjFIyCU8QaWJ5YyO6PwqpV2TQDdJIdIVX0GePoEQ1iD0EA6FoQVp7YGMatujsOW9Rr-O9GIWdIjXVS8ttsG0NJGupPeUbVO13SJBRb9zmSPQ1I_o9sW66W2g"
-            />
-          </div>
-          <div className="rounded-xl overflow-hidden shadow-2xl h-80 md:h-[400px] md:mt-12 opacity-90 transform md:rotate-[2deg] hover:rotate-0 transition-transform duration-500 relative border border-outline-variant/30">
-            <Image 
-              fill
-              sizes="(max-w-768px) 100vw, 33vw"
-              className="object-cover" 
-              alt="Mobile Application Interface Mockup"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIgE8SzRRHd4RN2Uw7CpK2D2VPa1yh7Ho4D4u8SgKjN9pXv66rMuCF4TWklNgulZqcsLR44LradDcsYolDOhQ4tDWT5FGbK7oWFFLTRlAfFlRKoAdO8Wlnawtpks_J0CSK7uhpuLYkgKXQxcGzWy1i0cwBDDr5A9XMeghJk5wNm0v2itDU6z16vLS5-ip2CxNCPicEmmOkMaUiPxBdYlp7lFHvUKAbzlBrqUxiKkLfjjb6H-PylTQ"
-            />
-          </div>
-        </div>
+        {/* Hero mockup sliding carousel */}
+        <HeroCarousel />
       </section>
 
       {/* 2. TRUST / CAPABILITY intro */}

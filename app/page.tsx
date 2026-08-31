@@ -97,7 +97,7 @@ export default async function HomePage() {
           {projects.map((project, idx) => (
             <Link 
               key={project.id}
-              href="/work"
+              href={`/work/${project.id}`}
               className={`group cursor-pointer ${idx % 2 === 1 ? "md:mt-24" : ""}`}
             >
               <div className="rounded-xl overflow-hidden bg-surface-container mb-6 relative border border-outline-variant/30 aspect-[4/3] w-full">

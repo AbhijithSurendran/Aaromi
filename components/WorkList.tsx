@@ -56,7 +56,7 @@ export default function WorkList({ projects }: { projects: Project[] }) {
           return (
             <Link 
               key={project.id}
-              href="/contact" 
+              href={`/work/${project.id}`} 
               className={`group flex flex-col gap-4 ${colSpan} ${mtClass} cursor-pointer`}
             >
               <div className={`relative w-full ${aspectClass} rounded-[16px] overflow-hidden bg-surface-container-low border border-outline-variant/30`}>

@@ -9,7 +9,8 @@ import {
   Mail, 
   LogOut,
   ShieldAlert,
-  SlidersHorizontal
+  SlidersHorizontal,
+  Sparkles
 } from "lucide-react";
 import AdminLogoutButton from "@/components/AdminLogoutButton";
 
@@ -90,6 +91,13 @@ export default function AdminLayout({
                 >
                   <Compass className="w-4 h-4 text-outline" />
                   Process
+                </Link>
+                <Link 
+                  href="/admin/about" 
+                  className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-surface-container transition-colors text-sm font-semibold"
+                >
+                  <Sparkles className="w-4 h-4 text-outline" />
+                  About Studio
                 </Link>
                 <Link 
                   href="/admin/contacts" 

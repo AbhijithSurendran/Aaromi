@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
 import Link from "next/link";
-import { FolderGit2, Settings, Compass, Mail, ExternalLink, Calendar, User, SlidersHorizontal } from "lucide-react";
+import { FolderGit2, Settings, Compass, Mail, ExternalLink, Calendar, User, SlidersHorizontal, Sparkles } from "lucide-react";
 
 async function getStats() {
   let projectCount = 0;
@@ -113,6 +113,13 @@ export default async function AdminDashboard() {
             >
               <span>Update Timeline</span>
               <Compass className="w-4 h-4 text-outline" />
+            </Link>
+            <Link 
+              href="/admin/about"
+              className="flex items-center justify-between px-4 py-3 bg-surface-container-low hover:bg-surface-container rounded-lg font-semibold text-sm transition-colors text-primary"
+            >
+              <span>Edit About Studio</span>
+              <Sparkles className="w-4 h-4 text-outline" />
             </Link>
             <Link 
               href="/admin/contacts"

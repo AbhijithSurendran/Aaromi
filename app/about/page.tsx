@@ -52,10 +52,10 @@ export default async function AboutPage() {
             {data.studioDescription}
           </p>
           <div className="w-full h-[400px] md:h-[600px] rounded-xl overflow-hidden border border-outline-variant/30 relative">
-            <Image 
+            <Image
               fill
               sizes="(max-w-768px) 100vw, 66vw"
-              className="object-cover" 
+              className="object-cover"
               alt="Sophisticated, minimalist studio workspace"
               src={data.imageUrl}
             />
@@ -71,7 +71,7 @@ export default async function AboutPage() {
           </div>
           <div className="md:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             {data.philosophy.map((item, idx) => (
-              <div 
+              <div
                 key={idx}
                 className="p-8 bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-[0px_20px_40px_rgba(26,26,26,0.04)]"
               >
@@ -96,13 +96,12 @@ export default async function AboutPage() {
             </div>
             <div className="md:col-span-8 flex flex-wrap gap-4">
               {data.values.map((val, idx) => (
-                <span 
+                <span
                   key={idx}
-                  className={`px-6 py-3 rounded-full border text-xs font-semibold uppercase tracking-widest ${
-                    val.featured 
-                      ? "text-primary bg-secondary-fixed border-transparent" 
+                  className={`px-6 py-3 rounded-full border text-xs font-semibold uppercase tracking-widest ${val.featured
+                      ? "text-primary bg-secondary-fixed border-transparent"
                       : "border-surface-bright/20 text-surface-bright bg-surface-bright/5"
-                  }`}
+                    }`}
                 >
                   {val.name}
                 </span>

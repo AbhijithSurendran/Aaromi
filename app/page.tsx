@@ -2,7 +2,7 @@ import fs from "fs/promises";
 import path from "path";
 import Link from "next/link";
 import Image from "next/image";
-import HeroCarousel from "@/components/HeroCarousel";
+import HeroCarousel, { HeroSlide } from "@/components/HeroCarousel";
 import FadeIn from "@/components/FadeIn";
 
 interface Project {
@@ -13,6 +13,16 @@ interface Project {
   description: string;
   imageUrl: string;
   featured: boolean;
+}
+
+async function getHeroSlides(): Promise<HeroSlide[]> {
+  try {
+    const filePath = path.join(process.cwd(), "data", "hero_slider.json");
+    const content = await fs.readFile(filePath, "utf8");
+    return JSON.parse(content);
+  } catch (err) {
+    return [];
+  }
 }
 
 async function getFeaturedProjects(): Promise<Project[]> {
@@ -28,6 +38,7 @@ async function getFeaturedProjects(): Promise<Project[]> {
 
 export default async function HomePage() {
   const projects = await getFeaturedProjects();
+  const heroSlides = await getHeroSlides();
 
   return (
     <main>
@@ -70,7 +81,7 @@ export default async function HomePage() {
         </div>
 
         {/* Hero mockup sliding carousel */}
-        <HeroCarousel />
+        <HeroCarousel slides={heroSlides} />
       </section>
 
       {/* 2. TRUST / CAPABILITY intro */}

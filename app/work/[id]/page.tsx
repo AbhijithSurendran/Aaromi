@@ -31,7 +31,7 @@ async function getProjectById(id: string): Promise<{ project: Project | null; ne
     const filePath = path.join(process.cwd(), "data", "projects.json");
     const content = await fs.readFile(filePath, "utf8");
     const projects: Project[] = JSON.parse(content);
-    
+
     const index = projects.findIndex(p => p.id === id);
     if (index === -1) return { project: null, nextProject: null };
 
@@ -87,7 +87,7 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
 
         {/* Hero Banner Image */}
         <div className="w-full h-[60vh] md:h-[80vh] relative mt-12 bg-surface-container-low border-y border-outline-variant/20">
-          <Image 
+          <Image
             fill
             priority
             sizes="100vw"
@@ -132,7 +132,7 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
                 {/* Secondary Large Banner */}
                 {project.galleryImages[1] && (
                   <div className="w-full rounded-lg overflow-hidden border border-outline-variant/30 bg-surface relative aspect-[16/10]">
-                    <Image 
+                    <Image
                       fill
                       sizes="(max-w-768px) 100vw, 90vw"
                       className="object-cover"
@@ -146,7 +146,7 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
                   {project.galleryImages[2] && (
                     <div className="w-full rounded-lg overflow-hidden border border-outline-variant/30 bg-surface shadow-[0px_20px_40px_rgba(26,26,26,0.04)] hover:-translate-y-2 transition-transform duration-500 relative aspect-[3/4]">
-                      <Image 
+                      <Image
                         fill
                         sizes="(max-w-768px) 100vw, 45vw"
                         className="object-cover"
@@ -157,7 +157,7 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
                   )}
                   {project.galleryImages[3] && (
                     <div className="w-full rounded-lg overflow-hidden border border-outline-variant/30 bg-surface shadow-[0px_20px_40px_rgba(26,26,26,0.04)] hover:-translate-y-2 transition-transform duration-500 mt-12 md:mt-24 relative aspect-[3/4]">
-                      <Image 
+                      <Image
                         fill
                         sizes="(max-w-768px) 100vw, 45vw"
                         className="object-cover"
@@ -203,7 +203,7 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
               <p className="text-lg md:text-xl text-on-surface-variant leading-relaxed">
                 {project.description}
               </p>
-              <div className="p-8 bg-surface-container rounded-xl border border-outline-variant/30 mt-8">
+              {/* <div className="p-8 bg-surface-container rounded-xl border border-outline-variant/30 mt-8">
                 <h4 className="font-bold text-primary mb-2 text-sm uppercase tracking-wider">CMS Mode Active</h4>
                 <p className="text-sm text-on-surface-variant leading-relaxed">
                   You can edit the full case study for this project (including strategy paragraphs, impact stats, and mockup image gallery paths) by accessing the CMS dashboard.
@@ -214,7 +214,7 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
                 >
                   Edit Project in CMS Panel
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -223,7 +223,7 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
       {/* 6. NEXT PROJECT FOOTER */}
       {nextProject && (
         <section className="w-full bg-surface py-section-gap border-b border-outline-variant/20">
-          <Link 
+          <Link
             href={`/work/${nextProject.id}`}
             className="block max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop group"
           >

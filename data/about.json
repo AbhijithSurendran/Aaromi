@@ -16,11 +16,26 @@
     }
   ],
   "values": [
-    { "name": "Curiosity", "featured": false },
-    { "name": "Craft", "featured": false },
-    { "name": "Clarity", "featured": false },
-    { "name": "Collaboration", "featured": false },
-    { "name": "Impact", "featured": true }
+    {
+      "name": "Curiosity",
+      "featured": false
+    },
+    {
+      "name": "Craft",
+      "featured": false
+    },
+    {
+      "name": "Clarity",
+      "featured": false
+    },
+    {
+      "name": "Collaboration",
+      "featured": false
+    },
+    {
+      "name": "Impact",
+      "featured": true
+    }
   ],
-  "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuCuyu9p2vK0wg4Dju2Emr1dBaz2g3kVpDQWz4jeiqpKaascqZ-tpX3oAwrejJq0s1f-ZetPC-oo_8MVfOXP-EIrum7NoCA1fONPWrTc7d7EU2ZPCzSak-cUsaNxouD-R3KjAcx0cjZGNUt_4vMwQjQjcLP1hWRCmN0Sd5XVhnQCfYAsUTnKmxjUi0LVUneFPOmC16rsdQhQM-LmjPJ4AlGTzPZSr74qiiqj07-JZjqcCqf7QroKntk"
+  "imageUrl": "/uploads/1788381235758-ChatGPT_Image_Sep_3__2026__02_03_36_AM.png"
 }

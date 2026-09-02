@@ -1,0 +1,23 @@
+[
+  {
+    "id": "slide-1",
+    "src": "/uploads/1788378670088-Labcentra__2_.png",
+    "alt": "LabCentra healthcare analytics dashboard UI mockup",
+    "tag": "Featured Product UI",
+    "caption": "Healthcare Analytics Dashboard"
+  },
+  {
+    "id": "slide-2",
+    "src": "/uploads/1788378882942-ebook.png",
+    "alt": "PixelBooks eBook marketplace and digital reading platform UI mockup",
+    "tag": "Editorial Aesthetic",
+    "caption": "A Smarter Digital Reading Experience"
+  },
+  {
+    "id": "slide-3",
+    "src": "/uploads/1788378969673-Kerala_Literacy_Mission.png",
+    "alt": "Kerala State Literacy Mission Authority responsive government website UI mockup",
+    "tag": "Government Website UI",
+    "caption": "Kerala State Literacy Mission"
+  }
+]

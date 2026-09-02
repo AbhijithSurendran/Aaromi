@@ -1,11 +1,11 @@
 [
   {
     "id": "lumina-tech",
-    "title": "Lumina Tech",
+    "title": "Doctor Anytime — Telemedicine Platform",
     "category": "Web Design, UI/UX",
-    "year": "2023",
-    "description": "A sophisticated digital interface for a high-end tech platform.",
-    "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuCldkP3CRuP7gktMRYwY8DWkC6T9cZTzyNn7_uqRF1Fe9pyxP_gr7o3tXi1iDxYEmLDDOedL8mwrK_PI9hHonaGyLIhWGou85S9FS_ChXn_kqt1ldCgoqYuVHVMF-hhQYYKukyX5beJGAj09ObaJzwPCaUW_UqjldLf6pH0UFluTDZvE14hfjVfxUZO46oV0J0odOorCzYC-iGqZ0YhBjLi7fwf4hjr4LbmkZU9rJo4rRuQPjaNjVM",
+    "year": "2025",
+    "description": "The experience focuses on simplicity, trust, and convenience, enabling patients to connect with certified physicians, manage appointments, access prescriptions, and securely store health records.",
+    "imageUrl": "/uploads/1788167572361-ChatGPT_Image_Jun_24__2026__08_44_11_PM.png",
     "featured": true,
     "industry": "",
     "services": "",
@@ -81,9 +81,18 @@
       "https://lh3.googleusercontent.com/aida-public/AB6AXuBhXLBqLAbgyfI2RN_S64MpcQSA7c2CG3bkta48C_qRY7rgAGkGf7ZPyt1aOTpcbrz-xygu7r1wh1hmnb84xCWEOVScUdJsX2DvpVGPrNA5UqFuh7D59tk4_9RDh4DgFJ0KbhIlv4KFu4AkWq2onL5lvaeUjDWwHicy37YwNSwe1-zdga8MDGWs22i7zBHLnK82F2eQ_d_QYsaXIDlUc6frgza621sPyf-eRL8_2buRGehBubDsDUE"
     ],
     "metrics": [
-      { "value": "+42%", "label": "Conversion Rate" },
-      { "value": "+68%", "label": "Avg. Time on Site" },
-      { "value": "2.1x", "label": "Faster Checkout" }
+      {
+        "value": "+42%",
+        "label": "Conversion Rate"
+      },
+      {
+        "value": "+68%",
+        "label": "Avg. Time on Site"
+      },
+      {
+        "value": "2.1x",
+        "label": "Faster Checkout"
+      }
     ]
   },
   {

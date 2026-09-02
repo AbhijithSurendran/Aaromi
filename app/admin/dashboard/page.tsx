@@ -1,17 +1,24 @@
 import fs from "fs/promises";
 import path from "path";
 import Link from "next/link";
-import { FolderGit2, Settings, Compass, Mail, ExternalLink, Calendar, User } from "lucide-react";
+import { FolderGit2, Settings, Compass, Mail, ExternalLink, Calendar, User, SlidersHorizontal } from "lucide-react";
 
 async function getStats() {
   let projectCount = 0;
   let submissionCount = 0;
+  let slideCount = 0;
   let recentSubmissions = [];
 
   try {
     const projectsPath = path.join(process.cwd(), "data", "projects.json");
     const projectsContent = await fs.readFile(projectsPath, "utf8");
     projectCount = JSON.parse(projectsContent).length;
+  } catch (e) {}
+
+  try {
+    const slidesPath = path.join(process.cwd(), "data", "hero_slider.json");
+    const slidesContent = await fs.readFile(slidesPath, "utf8");
+    slideCount = JSON.parse(slidesContent).length;
   } catch (e) {}
 
   try {
@@ -26,11 +33,11 @@ async function getStats() {
       .slice(0, 3);
   } catch (e) {}
 
-  return { projectCount, submissionCount, recentSubmissions };
+  return { projectCount, submissionCount, slideCount, recentSubmissions };
 }
 
 export default async function AdminDashboard() {
-  const { projectCount, submissionCount, recentSubmissions } = await getStats();
+  const { projectCount, submissionCount, slideCount, recentSubmissions } = await getStats();
 
   return (
     <div className="space-y-12">
@@ -42,7 +49,7 @@ export default async function AdminDashboard() {
       </div>
 
       {/* Statistics Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <div className="bg-surface border border-outline-variant/30 rounded-xl p-8 shadow-sm flex items-center justify-between">
           <div>
             <div className="text-xs uppercase font-sans font-bold tracking-wider text-on-surface-variant mb-2">Total Projects</div>
@@ -50,6 +57,16 @@ export default async function AdminDashboard() {
           </div>
           <div className="p-4 bg-surface-container-high rounded-full">
             <FolderGit2 className="w-8 h-8 text-primary" />
+          </div>
+        </div>
+
+        <div className="bg-surface border border-outline-variant/30 rounded-xl p-8 shadow-sm flex items-center justify-between">
+          <div>
+            <div className="text-xs uppercase font-sans font-bold tracking-wider text-on-surface-variant mb-2">Hero Slides</div>
+            <div className="text-5xl font-display font-bold text-primary">{slideCount}</div>
+          </div>
+          <div className="p-4 bg-surface-container-high rounded-full">
+            <SlidersHorizontal className="w-8 h-8 text-primary" />
           </div>
         </div>
 
@@ -69,6 +86,13 @@ export default async function AdminDashboard() {
         <div className="lg:col-span-4 bg-surface border border-outline-variant/30 rounded-xl p-8 shadow-sm h-fit">
           <h2 className="text-xl font-display font-bold text-primary mb-6">Quick Actions</h2>
           <div className="flex flex-col gap-3">
+            <Link 
+              href="/admin/hero-slider"
+              className="flex items-center justify-between px-4 py-3 bg-surface-container-low hover:bg-surface-container rounded-lg font-semibold text-sm transition-colors text-primary"
+            >
+              <span>Edit Hero Slider</span>
+              <SlidersHorizontal className="w-4 h-4 text-outline" />
+            </Link>
             <Link 
               href="/admin/projects"
               className="flex items-center justify-between px-4 py-3 bg-surface-container-low hover:bg-surface-container rounded-lg font-semibold text-sm transition-colors text-primary"
